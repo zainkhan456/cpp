@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float sum = 0.0;
+	float x;
+	int n,a;
+	cout<<"Enter the value of x: ";
+	cin>>x;
+	cout<<"Enter the number of terms: ";
+	cin>>n;
+	for(a = 1; a <= n; a++)
+		sum = sum + (x/(a+x));
+	cout<<"The sum of series is equal to "<<sum;
+	return 0;
+	
+}
