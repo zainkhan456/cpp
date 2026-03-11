@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class array{
+class ArrayOfObjects{
 	int a,b;
 	public:
 		void setdata(){
@@ -14,7 +14,7 @@ class array{
 
 int main()
 {
-	array arr[5];
+	ArrayOfObjects arr[5];
 	for(int i = 0;i<5;i++)
 	arr[i].setdata();
 	for(int i = 0;i < 5;i++)
