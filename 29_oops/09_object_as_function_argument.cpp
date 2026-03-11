@@ -1,32 +1,39 @@
 //extra => object as function argument
+/* This program gets two pair of inputs i-e Hours and minutes from user and then 
+ add then to calculate the total hours and minutes */
+
 #include<iostream>
 using namespace std;
-class time{
-	int h,m;
+class Time{
+	int hours,minutes;
 	public:
 		void getdata(){
-			cout<<"enter the value of hour and minutes: ";
-			cin>>h>>m;
+			cout<<"enter the value of hours: ";
+			cin>>hours;
+			cout<<"enter the value of minutes: ";
+            cin>>minutes;
 		}
-		void putdata(){
-			cout<<"hours: "<<h<<endl;
-			cout<<"minutes: "<<m<<endl;
+		void setdata(){
+			cout<<"\nhour: "<<hours<<endl;
+			cout<<"minutes: "<<minutes<<endl;
 		}
-		void sum(time t1,time t2){
-			h = (t1.m + t2.m)/60;
-			m = (t1.m + t2.m) % 60;
-			h = h + (t1.h + t2.h);
+
+        //Function to calculate the total hours
+		void totalhours(Time t1,Time t2){
+			hours = (t1.minutes + t2.minutes)/60;//Add the minutes and convert it to hours
+			minutes = (t1.minutes + t2.minutes) % 60;//Add minutes
+			hours = hours + (t1.hours + t2.hours);//Calculate the total hours
 		}
 };
 int main()
 {
-	time t1,t2,t3;
+	Time t1,t2,t3;
 	t1.getdata();
 	t2.getdata();
-	t3.sum(t1,t2);
-	t1.putdata();
-	t2.putdata();
-	t3.putdata();
+	t3.totalhours(t1,t2);
+	t1.setdata();
+	t2.setdata();
+	t3.setdata();
 return 0;
 }
 
