@@ -1,26 +1,26 @@
 #include<iostream>
 using namespace std;
-class reverse{
+class ReverseNum{
 	int n;
 	public:
-		void getdata(){
+		void setdata(){
 			cout<<"enter a number to find it's reverse: ";
 			cin>>n;
 		}
-		void setdata(){
+		void getdata(){
 			int rev = 0;
 			while(n > 0){
 				rev = (rev * 10) + n % 10;
 				n = n/10;
 			}
-			cout<<"\nreverse = "<<rev;
+			cout<<"\nreverse = "<<rev<<endl;
 		}
 };
 int main()
 {
-	reverse num;
-	num.getdata();
+	ReverseNum num;
 	num.setdata();
+	num.getdata();
 return 0;
 }
 
