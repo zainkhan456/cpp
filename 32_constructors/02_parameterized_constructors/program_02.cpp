@@ -1,11 +1,12 @@
+//Parameterized Constructor
 #include<iostream>
 using namespace std;
-class student{
+class StudentData{
 	private:
 		string name;
 		int rollno;
 	public:
-		student(string n,int r)
+		StudentData(string n,int r)
 		{
 			name = n;
 			rollno = r;
@@ -18,7 +19,7 @@ class student{
 		}
 };
 int main(){
-	student s1("zain",2);
+	StudentData s1("zain",2);
 	cout<<"name: "<<s1.getname()<<endl;
 	cout<<"roll no: "<<s1.getrollno();
 }
