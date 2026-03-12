@@ -1,3 +1,4 @@
+//calculating net salary of an employee
 #include<iostream>
 using namespace std;
 class empsalary{

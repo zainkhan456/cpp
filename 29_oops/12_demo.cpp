@@ -1,3 +1,4 @@
+//General program to understand classes and objects
 #include<iostream>
 using namespace std;
 class demo{

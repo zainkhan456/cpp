@@ -1,3 +1,4 @@
+//Demonstrating static variable and static function
 #include<iostream>
 using namespace std;
 class account{

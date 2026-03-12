@@ -1,3 +1,5 @@
+//program to set and get student information using classes and objects
+
 #include<iostream>
 using namespace std;
 
