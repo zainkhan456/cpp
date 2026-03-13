@@ -31,7 +31,7 @@ public:
 int main() {
     Teacher t;
     t.setDept("Computer Science");
-    t.setTeacher("Dr. Zain");
+    t.setTeacher("Mr. Zain");
     t.showTeacher();
     return 0;
 }

@@ -6,7 +6,7 @@ public:
     string name;
     int age;
 
-    void getPersonData() {
+    void setPersonData() {
         cout << "Enter name and age: ";
         cin >> name >> age;
     }
@@ -20,7 +20,7 @@ class Student : public Person {
 public:
     int rollNo;
 
-    void getStudentData() {
+    void setStudentData() {
         cout << "Enter roll number: ";
         cin >> rollNo;
     }
@@ -33,8 +33,8 @@ public:
 
 int main() {
     Student s;
-    s.getPersonData();
-    s.getStudentData();
+    s.setPersonData();
+    s.setStudentData();
     s.showStudentData();
     return 0;
 }

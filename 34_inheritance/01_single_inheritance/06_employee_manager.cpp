@@ -6,7 +6,7 @@ public:
     int id;
     float salary;
 
-    void getEmployeeData() {
+    void setEmployeeData() {
         cout << "Enter Employee ID and Salary: ";
         cin >> id >> salary;
     }
@@ -20,7 +20,7 @@ class Manager : public Employee {
 public:
     string department;
 
-    void getManagerData() {
+    void setManagerData() {
         cout << "Enter Department: ";
         cin >> department;
     }
@@ -33,8 +33,8 @@ public:
 
 int main() {
     Manager m;
-    m.getEmployeeData();
-    m.getManagerData();
+    m.setEmployeeData();
+    m.setManagerData();
     m.showManagerData();
     return 0;
 }
