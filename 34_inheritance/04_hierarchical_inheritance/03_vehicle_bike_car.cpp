@@ -1,42 +1,49 @@
 #include<iostream>
-using namespace std;
-class Person {
-public:
-    string name;
-    void setName(string n) {
-        name = n;
-    }
+using namespace std; 
+class Vehicle{
+public: 
+string brand;
+void setBrand(string brand){
+this->brand = brand;
+}
 };
-class Teacher : public Person {
-public:
-    string subject;
-    void setSubject(string s) {
-        subject = s;
-    }
+class Car : public Vehicle{
+public: 
+string carName;
+void setCarName(string carName){
+    this -> carName = carName;
+}
+void showCarDetail(){
+    cout<<"Car Detail "<<endl;
+    cout<<"Car brand: "<<brand<<endl;
+    cout<<"Car Name: "<<carName<<endl;
 
-    void showTeacher() {
-        cout << "Teacher: " << name << ", Subject: " << subject << endl;
-    }
+}
 };
-class Student : public Person {
-public:
-    int rollNo;
-    void setRollNo(int r) {
-        rollNo = r;
-    }
+class Bike : public Vehicle{
+public: 
+string bikeName;
+void setBikeName(string bikeName){
+    this -> bikeName = bikeName;
+}
+void showBikeDetail(){
+    cout<<"Bike Detail "<<endl;
+    cout<<"Bike brand: "<<brand<<endl;
+    cout<<"Bike Name: "<<bikeName<<endl;
+}
+};
 
-    void showStudent() {
-        cout << "Student: " << name << ", Roll No: " << rollNo << endl;
-    }
-};
-int main() {
-    Teacher t;
-    Student s;
-    t.setName("Sir Ali");
-    t.setSubject("Math");
-    s.setName("Zain");
-    s.setRollNo(23);
-    t.showTeacher();
-    s.showStudent();
-    return 0;
+int main(){
+    Car car;
+    Bike bike;
+    car.setBrand("Honda");
+    car.setCarName("Honda Civic");
+    bike.setBrand("Kawasaki");
+    bike.setBikeName("Kawasaki Ninja H2");
+
+    //showing the Details
+    car.showCarDetail();
+    bike.showBikeDetail();
+
+return 0;
 }
